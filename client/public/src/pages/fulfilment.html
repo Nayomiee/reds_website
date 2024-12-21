@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDS FULFILMENT CENTRE</title>
+    <link rel="stylesheet" href="/client/public/src/styles/fulfilment.css">
+    <link rel="stylesheet" href="/client/public/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/client/public/FONTS/Aleo,Allerta_Stencil,Chathura,Inter,Pacifico,etc.zip">
+    <link rel="shortcut icon" href="/client/public/IMAGES/REDS LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <a href="/client/public/src/pages/send.html"><i class="fas fa-arrow-left back"></i></a>
+    <div class="container">
+        <h1>REDS FULFILMENT INQUIRY FORM</h1>
+        <p class="description">Let's get to know you and your business needs</p>
+        <form id="form">
+            <label for="business">Business Name <span>*</span>
+                <input type="text" class="business" id="business" placeholder="Your Answer" required>
+            </label>
+            <label for="contact">Contact Person <span>*</span>
+                <input type="text" class="contact" id="contact" placeholder="Your Answer" required>
+            </label>
+            <label for="email">Email Address <span>*</span>
+                <input type="email" class="email" id="email" placeholder="Your Answer" required>
+            </label>
+            <label for="phone">Phone Number  (including country code) <span>*</span>   
+                <input type="tel" class="phone" id="phone" placeholder="Your Answer" required>
+            </label>
+            <label for="business-website">Business Website or social media links <span>*</span>
+                <input type="url" class="business-website" id="business-website" placeholder="Your Answer" required>
+            </label>
+            <label for="customer-base" class="customer-base">Customer Base <span>*</span>
+                <input type="text" class="customer-base" id="customer-base" placeholder="Your Answer" required>
+            </label>
+            <label for="customer-base">Do you currently have an active customer base in the UK?
+                <div class="radio-group">
+                    <input type="radio" name="customer-base" id="customer-base" required checked>Yes
+                    <input type="radio" name="customer-base" id="customer-base" required>No
+                    <input type="radio" name="customer-base" id="customer-base" required>Maybe
+                </div>
+            </label>
+            <label for="answer">If Yes, please specify the numbers of UK customers or average monthly orders
+                <input type="text" class="answer" id="answer" placeholder="Your Answer">
+            </label>
+            <label for="products">What type of products do you sell? Briefly describe the product categories(e.g.. clothing,electronics etc..) <span>*</span>
+                <input type="text" class="products" id="products" placeholder="Your Answer" required>
+            </label>
+            <label for="weights">What is the average weight or typical sizes  of your products?
+                <input type="text" class="weights" id="weights" placeholder="Your Answer">
+            </label>
+            <label for="frequent">How freequently do you expect to ship order to UK customers? 
+                <div class="radio-group">
+                    <input type="radio" name="frequent" id="frequent" required checked>Daily
+                    <input type="radio" name="frequent" id="frequent" required>Weekly
+                    <input type="radio" name="frequent" id="frequent" required>Monthly
+                    <input type="radio" name="frequent" id="frequent" required>On Demand
+                    <input type="radio" name="frequent" id="frequent" required>Other
+                </div>
+            </label>
+            <label for="volume">What is your estimated monthly order volume for UK customers
+                <div class="radio-group">
+                    <input type="radio" name="volume" id="volume" required checked>1-50
+                    <input type="radio" name="volume" id="volume" required>51-200
+                    <input type="radio" name="volume" id="volume" required>201-500
+                    <input type="radio" name="volume" id="volume" required>501 and above
+                    <input type="radio" name="volume" id="volume" required>Other 
+                </div>
+                <input class="sub-input" type="text" placeholder="Specify">
+            </label>
+            <label for="additional">Do you require any additional services?
+                <div class="radio-group">
+                    <input type="checkbox" name="additional" id="additional" required >Payment Processing
+                    <input type="checkbox" name="additional" id="additional" required>Custom Packing
+                    <input type="checkbox" name="additional" id="additional" required>Return Management
+                    <input type="checkbox" name="additional" id="additional" required checked>Other
+                </div>
+                <input type="text" class="sub-input" id="sub-input" placeholder="Specify">
+            </label>
+            <label for="challenges">What are your primary challenges with your current fulfilment process for UK orders
+                <input type="text" class="challenges" id="challenges" placeholder="Your Answer">
+            </label>
+            <label for="anticipation">Do you anticipate any seasonal peaks or fluctuations in your order volume
+                <div class="radio-group">
+                    <input type="radio" name="anticipation" id="anticipation" required checked>Yes
+                    <input type="radio" name="anticipation" id="anticipation" required>No
+                    <input type="radio" name="anticipation" id="anticipation" required>Maybe
+                </div>
+            </label>
+            <label for="timeline">What is your expected timeline for starting with a new fulfilment partner?
+               <div class="radio-group">
+                <input type="radio" name="timeline" id="timeline" required checked>Immediate
+                <input type="radio" name="timeline" id="timeline" required>1-3 months
+                <input type="radio" name="timeline" id="timeline" required>3-6 months
+                <input type="radio" name="timeline" id="timeline" required>Flexible
+                <input type="radio" name="timeline" id="timeline" required>Other 
+               </div>
+               <input class="sub-input" type="text" placeholder="Specify">
+            </label>
+            <label for="file-upload">Please upload a file that provides proof of your existing UK customer base. This could include sales reports, invoices, order summaries or any documentation that shows your UK transactions
+                <input type="file" class="file-upload" id="file-upload" max="1" required>
+            </label>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+</body>
+</html>

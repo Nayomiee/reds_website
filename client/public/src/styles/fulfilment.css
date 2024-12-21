@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#d32f2f;
+    --white:#ffffff;
+    --dark-red:#8b0000;
+    --light-grey:#f4f4f4;
+    --charcoal-grey:#333333;
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--white);
+}
+.back{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    font-size: 1.5rem;
+    color: var(--dark-red);
+}
+.container{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: var(--light-grey);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(139,0,0,0.18);
+    max-width: 600px;
+}
+h1{
+    font-size: 2.5rem;
+    color: var(--charcoal-grey);
+    margin-bottom:0;
+    color: var(--charcoal-grey);
+}
+.description{
+    font-size: 1rem;
+    color:grey;
+    margin-bottom: 2rem;
+}
+form{
+    width: 90%;
+    margin: 0 auto 15px;
+    padding: 20px;
+    border-radius: 0.8rem;
+}
+label{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="tel"]{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+}
+.sub-input{
+    width: 50% !important;
+}
+.radio-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 1rem;
+}
+input[type="radio"]{
+   display: inline-block;
+}
+span{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+input[type="file"]{
+    display: block;
+    margin-top: 0.8rem;
+}
+input[type="submit"]{
+    width: 50%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-red);
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+input[type="submit"]:hover{
+    background-color: transparent;
+    outline: 2px solid var(--dark-red);
+    color: var(--charcoal-grey);
+    box-shadow: 0 4px 6px rgba(139,0,0,0.18);
+}
