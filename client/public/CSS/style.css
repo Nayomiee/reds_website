@@ -80,6 +80,7 @@ body{
 }
 .cta:hover{
     background-color: var(--dark-red);
+    color: var(--white);
 }
 .buttons{
     display: flex;
@@ -132,6 +133,9 @@ body{
 .cta-buttons{
     display: flex;
     gap: 1rem;
+}
+.pry:hover a{
+    color: var(--white)!important;
 }
 .cta.secondary{
     background-color: var(--dark-red);
