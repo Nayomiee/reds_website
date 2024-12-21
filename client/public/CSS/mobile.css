@@ -1,0 +1,165 @@
+:root{
+    --primary-red:#d32f2f;
+    --dark-red:#8b0000;
+    --white:#ffffff;
+    --light-gray:#f4f4f4;
+    --charcoal-gray:#333333;
+    --gold:#ffc107;
+    --green:rgb(8, 144, 8);
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: var(--charcoal-gray);
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+strong{
+    color: var(--dark-red);
+}
+.mobile-container{
+    overflow-x: hidden;
+}
+.mobile-header{
+    background-color: var(--white);
+    border-bottom: 1px solid var(--primary-red);
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0;
+    position: sticky;
+}
+.mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.mobile-nav .logo img{
+    width: 4rem;
+    margin: 0.3rem 0;
+    padding: 0;
+}
+.mobile-nav .logo p{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 18%;
+    font-weight: 600;
+    color: var(--charcoal-gray);
+}
+.mobile-nav .menu-icons{
+    display: flex;
+    gap: 1em;
+}
+.mobile-hero{
+    background-color: #d32f2fb9;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    top: 10.5%;
+    padding: 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.mobile-hero-text h1{
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.mobile-hero-text h1 span{
+    color: var(--light-gray);
+}
+.mobile-hero-text .description{
+    margin: 0.5rem 0 1rem;
+    padding: 0;
+    color: var(--light-gray);
+}
+.mobile-hero-text .description i{
+    color: var(--charcoal-gray);
+}
+.mobile-pricing{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
+.mobile-pricing-cards{
+   display: grid;
+   grid-template-columns: repeat(autofit, minmax(250px,1fr));
+   gap: 20px;
+   justify-content: center;
+   margin-top: 2rem;
+}
+.pricing-card{
+    background-color: var(--white);
+    border:1px solid var(--light-gray);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    max-width: 400px;
+    min-height: 300px;
+}
+.price-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.price-section-last{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.card-last p{
+    width: 80%;
+    color: grey;
+    margin: 2rem auto;
+}
+.mobile-pricing h2{
+    color: var(--dark-red);
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+.mobile-pricing .sub-text{
+    margin: 0.2rem  0 0.5rem;
+    letter-spacing: 0.5px;
+    color: grey;
+    padding: 0;
+}
+.mobile-pricing h3{
+    color: var(--dark-red);
+}
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer-main .footer-card{
+    max-width: 200px;
+    padding: 0.5rem;
+}
+.footer-main .footer-card h5{
+text-align: center;
+}
+.footer-main .contactus{
+    display: flex;
+    flex-direction: column;
+}
+.footer-main .contactus input[type="submit"]{
+    background-color: var(--charcoal-gray);
+    color: var(--white);
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.footer-main .contactus input[type="submit"]:hover{
+    background-color: var(--green);
+}
